@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 5</title>
+    <style>
+    body{
+        margin: 2%;
+        border: 1px solid black;
+        background-color: #b3b3b3;
+    }
+    #image{
+        line-height:325px;
+        width: 388px;
+        height: 325px;
+        border:5px solid black;
+        margin:0 auto;
+        background-repeat: no-repeat;
+        color:#FFFFFF;
+        text-align: center;
+        background-color: #8e68ff;
+        background-size: 100%;
+        margin-bottom:25px;
+        font-size:150%;
+    }
+    .preview{
+        width:10%;
+        margin-left:17%;
+        border: 10px solid black;
+    }
+    img{
+        width:95%;
+    }
+    h1{
+        text-align: center;
+    }
+    </style>
+
+    <script>
+    // I used Two functions here.  Starter idea at:
+    // https://codepen.io/ColleenEMc/pen/XmZzWw
+    function upDate(previewPic){
+      console.log(previewPic)
+      document.querySelector('#image').innerHTML = previewPic.alt;
+      document.getElementById('image').style.backgroundImage = "url("+previewPic.src+")";
+
+  }
+
+    function unDo(){
+  
+    document.getElementById('image').style.backgroundImage = "url()";
+    document.querySelector('#image').innerHTML = "Hover or tab over/into an image below.";
+
+	}
+    </script>
+</head>
+
+<body>
+    <h1>Challenge 5</h1>
+        <div id = "image">
+            Hover or tab over/into an image below.
+        </div>
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview" tabindex = "1"
+            alt = "Shake Puppy Mixbreed"
+            src = "https://static1.squarespace.com/static/53a096cce4b00d7644776a0b/544d5f5ce4b0b7c1dfbfb70e/544d5fb8e4b0c74d75f23c8f/1414356922277/Shake+Puppies-2_Mixbreed.jpg?format=1000w"
+            onmouseover ="upDate(this)"
+            onmouseleave = "unDo()"
+            onfocus = "upDate(this)"
+      			onblur = "unDo()">
+
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview" tabindex = "2"
+            alt = "Shake Puppy Dachshund"
+            src = "https://static1.squarespace.com/static/53a096cce4b00d7644776a0b/544d5f5ce4b0b7c1dfbfb70e/544d5fbae4b048f0ef614dbf/1414356922937/Shake+Puppies-4Dachshund.jpg?format=1000w"
+            onmouseover ="upDate(this)"
+            onmouseleave = "unDo()"
+            onfocus = "upDate(this)"
+      			onblur = "unDo()">
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview" tabindex = "3"
+            src = "https://static1.squarespace.com/static/53a096cce4b00d7644776a0b/544d5f5ce4b0b7c1dfbfb70e/544d5fbbe4b048f0ef614dc6/1414356924216/Shake+Puppies-5_Shar+Pei.jpg?format=1000w"
+            alt = "Shake Puppy Shapei"
+            onmouseover ="upDate(this)"
+            onmouseleave = "unDo()"
+            onfocus = "upDate(this)"
+      			onblur = "unDo()">
+
+        <img class = "preview" tabindex = "4"
+            src = "https://static1.squarespace.com/static/53a096cce4b00d7644776a0b/544d5f5ce4b0b7c1dfbfb70e/544d5fbce4b048f0ef614dc8/1414356925188/Shake+Puppies-7_Pitbull.jpg?format=1000w"
+            alt = "Shake Puppy Pitbull"
+            onmouseover ="upDate(this)"
+            onmouseleave = "unDo()"
+            onfocus = "upDate(this)"
+      			onblur = "unDo()">
+
+        <img class = "preview" tabindex = "5"
+            src = "https://static1.squarespace.com/static/53a096cce4b00d7644776a0b/544d5f5ce4b0b7c1dfbfb70e/544d5fbde4b048f0ef614dca/1414356930153/Shake+Puppies-9_Boxer.jpg?format=1000w"
+            alt = "Shake Puppy Boxer"
+            onmouseover ="upDate(this)"
+            onmouseleave = "unDo()"
+            onfocus = "upDate(this)"
+      			onblur = "unDo()">
+
+        [<img class = "preview" tabindex = "6"
+            src = "https://static1.squarespace.com/static/53a096cce4b00d7644776a0b/544d5f5ce4b0b7c1dfbfb70e/544d5fbee4b0c74d75f23cad/1414356928065/Shake+Puppies-12_Pomeranian.jpg?format=1000w"
+            alt = "Shake Puppy Pormeranian"
+            onmouseover ="upDate(this)"
+            onmouseleave = "unDo()"
+            onfocus = "upDate(this)"
+      			onblur = "unDo()">]
+</body>
+</html>
